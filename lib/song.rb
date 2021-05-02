@@ -18,6 +18,7 @@ class Song
     binding.pry
     artist = Artist.find_or_create_by_name(file_array[0])
     artist.add_song(song)
+    song.artist.name
   end 
   
   def artist_name=(name)
