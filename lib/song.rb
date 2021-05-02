@@ -24,5 +24,6 @@ class Song
   def artist_name=(name)
     binding.pry
     song.artist = Artist.find_or_create_by_name(name)
+    Artist.add_song(song)
   end 
 end 
