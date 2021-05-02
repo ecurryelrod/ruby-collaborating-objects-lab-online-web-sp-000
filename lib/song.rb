@@ -23,6 +23,6 @@ class Song
   
   def artist_name=(name)
     binding.pry
-    song.new_by_filename(filename) = Artist.find_or_create_by_name(name)
+    song.artist = Artist.find_or_create_by_name(name)
   end 
 end 
