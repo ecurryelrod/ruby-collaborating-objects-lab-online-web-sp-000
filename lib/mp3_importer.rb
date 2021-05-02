@@ -13,7 +13,7 @@ class MP3Importer
   
   def import
     # binding.pry
-    song = self.files.each {|file| Song.new_by_filename(file)}
+    song = @files.each {|file| Song.new_by_filename(file)}
    # Artist.all << Song.artist
   end 
 end 
