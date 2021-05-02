@@ -9,7 +9,7 @@ class MP3Importer
     @files = Dir.children(@path)
   end 
   
-  def import(filenames)
+  def import
     filenames.each {|filename| Song.new_by_file_name(filename)}
   end 
 end 
