@@ -14,6 +14,6 @@ class MP3Importer
   def import
     binding.pry
     song = self.files.each {|file| Song.new_by_filename(file)}
-    Artist.all << song.artist
+    Artist.all << Song.artist
   end 
 end 
