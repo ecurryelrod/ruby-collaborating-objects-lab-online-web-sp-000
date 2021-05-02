@@ -9,7 +9,6 @@ class MP3Importer
   
   def files 
     @files = Dir.children(@path)
-   
   end 
   
   def import
