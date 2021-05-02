@@ -17,7 +17,7 @@ class Song
     song = self.new(file_array[1])
     binding.pry
     artist = Artist.find_or_create_by_name(file_array[0])
-    artist.add_song << song
+    artist.add_song(song)
   end 
   
   def artist_name=(name)
