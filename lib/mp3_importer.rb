@@ -8,7 +8,7 @@ class MP3Importer
   end 
   
   def files 
-    @files = Dir.children(@path)
+    files = Dir.children(@path)
   end 
   
   def import
